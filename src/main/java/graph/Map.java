@@ -19,22 +19,22 @@ public class Map {
         private City tresBarras;
 
         public Map() {
-            portoUniao = new City("Porto União");
-            pauloFrontin = new City("Paulo Frontin");
-            canoinhas = new City("Canoinhas");
-            irati = new City("Irati");
-            palmeira = new City("Palmeira");
-            campoLargo = new City("Campo Largo");
-            curitiba = new City("Curitiba");
-            balsaNova = new City("Balsa Nova");
-            araucaria = new City("Araucária");
-            saoJose = new City("São José dos Pinhais");
-            contenda = new City("Contenda");
-            mafra = new City("Mafra");
-            tijucas = new City("Tijucas do Sul");
-            lapa = new City("Lapa");
-            saoMateus = new City("São Mateus do Sul");
-            tresBarras = new City("Três Barras");
+            portoUniao = new City("Porto União", 203);
+            pauloFrontin = new City("Paulo Frontin", 172);
+            canoinhas = new City("Canoinhas", 141);
+            irati = new City("Irati", 139);
+            palmeira = new City("Palmeira", 59);
+            campoLargo = new City("Campo Largo", 27);
+            curitiba = new City("Curitiba", 0);
+            balsaNova = new City("Balsa Nova", 41);
+            araucaria = new City("Araucária", 23);
+            saoJose = new City("São José dos Pinhais", 13);
+            contenda = new City("Contenda", 39);
+            mafra = new City("Mafra", 94);
+            tijucas = new City("Tijucas do Sul", 56);
+            lapa = new City("Lapa", 74);
+            saoMateus = new City("São Mateus do Sul", 123);
+            tresBarras = new City("Três Barras", 131);
 
             portoUniao.addAdjacent(new AdjacentCity(pauloFrontin));
             portoUniao.addAdjacent(new AdjacentCity(canoinhas));
