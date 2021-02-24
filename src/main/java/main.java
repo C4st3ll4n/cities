@@ -1,4 +1,5 @@
 import graph.Map;
+import search.AEstrela;
 import search.Gulosa;
 import search.Largura;
 import search.Profundidade;
@@ -23,8 +24,17 @@ public class main {
         vector.add(map.getBalsaNova());
 
         vector.mostrar();*/
+
+        System.out.println("############ Buscar gulosa ###############");
         Map map = new Map();
         Gulosa gulosa = new Gulosa(map.getCuritiba());
         gulosa.buscar(map.getPortoUniao());
+        System.out.println("############ Buscar gulosa ###############");
+
+        System.out.println("############ Buscar A* ###############");
+        Map _map = new Map();
+        AEstrela aEstrela = new AEstrela(_map.getCuritiba());
+        aEstrela.buscar(_map.getPortoUniao());
+        System.out.println("############ Buscar A* ###############");
     }
 }
